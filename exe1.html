@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - HackMe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>HackMe  - Senhas Fracas (Parte I)</h1>
+    </header>
+    <div class="botoes-dica">
+        <button id="botaoDica1" class="botao" style="display: none;" onclick="exibirDica1()">Dica 1</button>
+        <button id="botaoDica2" class="botao" style="display: none;" onclick="exibirDica2()">Dica 2</button>
+    </div>
+
+    <main class="container">
+        <h2>Login</h2>
+        <form action="#" onsubmit="return fazerLogin();">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required>
+            <i id="checkEmail" class="fas fa-check" style="display: none; color: green;"></i><br>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            <i id="checkSenha" class="fas fa-check" style="display: none; color: green;"></i><br>
+            <input type="submit" value="Entrar">
+        </form>
+    </main>
+    <p id="mensagemErro" style="color: red; display: none;">Credenciais inválidas. Tente novamente.</p>
+    <p id="mensagemAcertouEmail" style="color: green; display: none;">Acertou o e-mail!</p>
+    <p id="mensagemAcertouSenha" style="color: green; display: none;">Acertou a senha!</p>
+    <div id="cronometro" class="cronometro"></div>
+    <footer>
+        <h3>Profº Pedro - Novotec</h3>
+    </footer>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.2/js/all.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
